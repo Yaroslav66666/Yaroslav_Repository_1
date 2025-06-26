@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="max-image-preview:large" />
+    <title>Coala</title>
+
+    <style>
+      body {
+        background: #25a9fc;
+      }
+
+      .box {
+        position: relative;
+        margin: auto;
+        display: block;
+        margin-top: 8%;
+        width: 600px;
+        height: 420px;
+        background: none;
+        border: 3px solid red;
+      }
+
+      .head {
+        position: absolute;
+        top: 16.5%;
+        left: 25%;
+        width: 50%;
+        height: 67%;
+        background: #a6becf;
+        border-radius: 50%;
+      }
+
+      .head-copy {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: #a6becf;
+        border-radius: 50%;
+        z-index: 2;
+      }
+
+      .ear-left {
+        position: absolute;
+        width: 60%;
+        height: 65%;
+        left: -20%;
+        top: 5%;
+        background: #a6becf;
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+      .ear-right {
+        position: absolute;
+        width: 60%;
+        height: 65%;
+        right: -20%;
+        top: 5%;
+        background: #a6becf;
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+      .inner-ear {
+        position: absolute;
+        border-radius: 50%;
+        width: 80%;
+        height: 80%;
+        top: 10%;
+        left: 10%;
+        background: #819caf;
+      }
+
+      .eye-left {
+        position: absolute;
+        background: white;
+        width: 30%;
+        height: 33%;
+        top: 25%;
+        left: 21%;
+        border-radius: 50%;
+        z-index: 3;
+      }
+
+      .eye-right {
+        position: absolute;
+        background: white;
+        width: 30%;
+        height: 33%;
+        top: 25%;
+        right: 21%;
+        border-radius: 50%;
+        z-index: 3;
+      }
+
+      .pupil {
+        position: absolute;
+        width: 28%;
+        height: 30%;
+        top: 35%;
+        left: 36%;
+        border-radius: 50%;
+        background: #27354a;
+        transition: .5s;
+      }
+
+      .nose {
+        position: absolute;
+        background: #be845f;
+        width: 25%;
+        height: 42.5%;
+        left: 37%;
+        top: 45%;
+        border-radius: 50px;
+        z-index: 4;
+        transition: .5s;
+      }
+
+      .hair-left {
+        position: absolute;
+        top: -8%;
+        left: 30%;
+        width: 20%;
+        height: 20%;
+        background: #a6becf;
+        -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        transition: .5s;
+      }
+
+      .hair-right {
+        position: absolute;
+        top: -4%;
+        left: 48%;
+        width: 20%;
+        height: 20%;
+        background: #a6becf;
+        -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        transition: .5s;
+      }
+
+      .head:hover .pupil {
+        width: 35%;
+        height: 38%;
+        background-color: red;
+      }
+
+      .head:hover .nose {
+        
+        height: 150%;
+        
+      }
+
+      .head:hover .hair-left {
+        
+        height: 100%;
+      }
+
+      .head:hover .hair-right {
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <body>
+      <!-- Початок зображення -->
+      <!-- Невидиме поле -->
+      <div class="box">
+        <!-- Кругла голова -->
+        <div class="head">
+          <!-- Кругла копія голови -->
+          <div class="head-copy"></div>
+
+          <!-- Ліве вухо ~ світло-сіре -->
+          <div class="ear-left">
+            <!--  ~ темно-сіре -->
+            <div class="inner-ear"></div>
+          </div>
+
+          <!-- Праве вухо ~ світло-сіре -->
+          <div class="ear-right">
+            <!-- Внутрішнє вухо ~ темно-сіре -->
+            <div class="inner-ear"></div>
+          </div>
+
+          <!-- Ліве око ~ біле -->
+          <div class="eye-left">
+            <!-- Зіниця ~ чорна -->
+            <div class="pupil"></div>
+          </div>
+
+          <!-- Праве око ~ біле  -->
+          <div class="eye-right">
+            <!-- Зіниця ~ чорна -->
+            <div class="pupil"></div>
+          </div>
+
+          <!-- Ніс ~ коричневий -->
+          <div class="nose"></div>
+
+          <!-- Волосся ~ світло-сіре -->
+          <div class="hair-left"></div>
+          <div class="hair-right"></div>
+
+          <!-- Кінець Голови -->
+        </div>
+        <!-- Невидиме поле кінець -->
+      </div>
+    </body>
+  </body>
+</html>

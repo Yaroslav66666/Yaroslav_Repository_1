@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sign Up</title>
+    <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            height: auto;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            margin: 50px auto;
+        }
+
+        .form-head {
+            background-color: orange;
+            padding: 10px;
+        }
+
+        .form-main {
+           background-color: rgb(114, 114, 114);
+           padding: 10px;
+        }
+
+        .left-side, .right-side {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .left-side {
+          /*  background-color: aqua; */
+            width: 30%;
+        }
+
+        .right-side {
+          /*  background-color: blue; */
+            width: 68%;
+        }
+
+        .row {
+            text-align: end;
+            margin-bottom: 15px;
+        }
+
+        .rinput {
+            text-align: start;
+            margin-left: 10px;
+        }
+
+        .input {
+            padding: 3px;
+        }
+
+        .form-footer {
+            height: 5%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 30px;
+            background-color: orange;
+            text-align: right;
+        }
+
+        .buttons {
+            min-height: 20px;
+            background-color: orange;
+            margin-left: 5px;
+            width: 80%;
+        }
+
+        .button {
+            font-size: 16px;
+            width: auto;
+            max-width: none;
+            border-radius: 12px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .submit-button {
+            background-color: #38b000;
+            color: white;
+            border: none;
+        }
+
+        .cancel-button {
+            background-color: #f44336;  
+            color: white;
+            border: none;
+        }
+
+         h1, .form-title {
+            color: #FFD700;
+         }
+
+         label {
+            color: #FFD700;
+            cursor: pointer;
+         }
+
+         input[type="radio"] + label {
+            color: #FFD700;
+            cursor: pointer;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <form action="#" method="get" novalidate>
+          <div class="form-head">
+              <h1><span>Sign Up</span></h1>
+          </div>
+
+          <div class="form-main">
+              <div class="left-side">
+                  <div class="row">
+                      <label for="text1">First Name</label>
+                  </div>
+                  <div class="row">
+                      <label for="text2">Last Name</label>
+                  </div>
+                  <div class="row">
+                      <label for="text3">Screen Name</label>
+                  </div>
+                  <div class="row">
+                      <label for="text4">Date of Birth</label>
+                  </div>
+                  <div class="row" style="vertical-align: top;">
+                      <label>Gender</label>
+                  </div>
+                  <div class="row">
+                      <label for="text5">Country</label>
+                  </div>
+                  <div class="row">
+                      <label for="text6">E-mail</label>
+                  </div>
+                  <div class="row">
+                      <label for="text7">Phone</label>
+                  </div>
+                  <div class="row">
+                      <label for="text8">Password</label>
+                  </div>
+                  <div class="row">
+                      <label for="text9">Confirm&nbsp;Password</label>
+                  </div>
+              </div>
+
+              <div class="right-side">
+                  <div class="row rinput">
+                      <input type="text" id="text1" name="firstName" placeholder="Enter First Name..." required>
+                  </div>
+                  <div class="row rinput">
+                      <input type="text" id="text2" name="lastName" placeholder="Enter Last Name..." required>
+                  </div>
+                  <div class="row rinput">
+                      <input type="text" id="text3" name="screenName" placeholder="Enter Screen Name..." required>
+                  </div>
+                  <div class="row rinput" style="white-space: nowrap;">
+                      <select name="month" id="month" required>
+                        <option value="">Month</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                      </select>
+                      
+                      <select name="day" id="day" required></select>
+
+                      <select name="year" id="year" required></select>
+                  </div>
+                  <div class="row rinput">
+                      <input type="radio" name="gender" id="male" value="male">
+                      <label for="male" class="gender-label" style="margin-right: 10px;">Male</label>
+
+                      <input type="radio" name="gender" id="female" value="female">
+                      <label for="female" class="gender-label">Female</label>
+                  </div>
+                  <div class="row rinput">
+                      <select name="country" id="country" required>
+                        <option value="">Country</option>
+                        <option>USA</option>
+                        <option>Ukraine</option>
+                        <option>Canada</option>
+                        <option>Spain</option>
+                        <option>Germany</option>
+                      </select>
+                  </div>
+                  <div class="row rinput">
+                      <input type="email" id="text6" name="email" placeholder="Enter E-mail..." required>
+                  </div>
+                  <div class="row rinput">
+                      <input type="tel" id="text7" name="phone" placeholder="Enter Phone..." required>
+                  </div>
+                  <div class="row rinput">
+                      <input type="password" id="text8" name="password" placeholder="Enter Password..." required>
+                  </div>
+                  <div class="row rinput">
+                      <input type="password" id="text9" name="confirmPassword" placeholder="Enter Confirm Password..." required>
+                  </div>
+                  <div class="row rinput" style="text-align: start; margin-top: 5px;">
+                      <label>
+                          <input type="checkbox" name="terms" required>
+                          I agree to the Terms of Use
+                      </label>
+                  </div>
+              </div>
+          </div>
+
+          <div class="form-footer">
+              <div class="buttons">
+                  <button type="submit" class="button submit-button">Submit</button>
+                  <button type="button" class="button cancel-button">Cancel</button>
+              </div>
+          </div>
+      </form>
+    </div>
+
+<script>
+    
+    const daySelect = document.getElementById('day');
+    for(let i=1; i<=31; i++) {
+      const option = document.createElement('option');
+      option.value = i;
+      option.textContent = i;
+      daySelect.appendChild(option);
+    }
+
+    
+    const yearSelect = document.getElementById('year');
+    const currentYear = new Date().getFullYear();
+    for(let i = currentYear; i >= 1900; i--) {
+      const option = document.createElement('option');
+      option.value = i;
+      option.textContent = i;
+      yearSelect.appendChild(option);
+    }
+</script>
+</body>
+</html>
+

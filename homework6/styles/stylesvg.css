@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+.svg_img {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    background-image: url(../images/icons8-логотип-48.png);
+    margin-left: 50px;
+}
