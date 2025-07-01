@@ -1,5 +1,173 @@
-.navbar {
-    background-color: #EEEFF1;
+@import 'variables';
+@import 'media';
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: $bg-color;
+  padding: 15%;
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .burger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+    color: $link-color;
+  }
+
+  .nav-links {
+    position: relative;
+    top: -200px;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 2%;
+      margin-left: 10%;
+      flex-wrap: wrap;
+
+      .nav-item {
+        margin-top: 0;
+
+        a {
+          color: $link-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .h1 {
     display: flex;
-    padding: 10%;
+    align-items: center;
+    margin-top: -5%;
+    margin-left: 10%;
+  }
+
+  .text1 {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 10%;
+    display: flex;
+
+    p {
+      color: $text-color;
+      max-width: 47%;
+    }
+  }
+
+  .text-box {
+    background-color: $nav-color;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    border: 1px solid black;
+    width: fit-content;
+    height: auto;
+    margin-top: 7%;
+    margin-left: 10%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+}
+
+.h2 {
+  text-align: center;
+  margin-top: 7%;
+}
+
+.text2 {
+  text-align: center;
+  margin-top: 3%;
+  margin-left: 35%;
+
+  p {
+    color: $text-color;
+    max-width: 50%;
+  }
+}
+
+
+.svg-box {
+  background-color: $nav-color;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  overflow-x: auto;
+
+  .svg-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+
+    p {
+      color: white;
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+}
+
+
+.video-color {
+  background-color: $bg-color;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+
+  .text-block {
+    h3 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: $text-color;
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .iframe1 {
+    iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+    }
+  }
+}
+
+
+.footer-box {
+  background-color: $nav-color;
+  text-align: center;
+  padding: 2%;
+
+  .text5 {
+    color: white;
+    margin-right: 40%;
+  }
 }

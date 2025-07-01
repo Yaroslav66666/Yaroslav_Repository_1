@@ -34,7 +34,7 @@ console.log(bool_res3)
 console.log("Завдання 4")       // Завдання 4
 
 let age = 190;
-let votable = (age, 180) ? "Ваш зріст 180см або більше" : "Занадто високий";
+let votable = ("age 180") ? "Ваш зріст 180см або більше" : "Занадто високий";
 alert(votable);
 
 if ( 190>180 ) {
