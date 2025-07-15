@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.cat-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.variants-cats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+    
+}
+
+.variants-cats button {
+    height: 30px;
+    width: 70px;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.bg-color {
+    background-color: orange !important;
+}
