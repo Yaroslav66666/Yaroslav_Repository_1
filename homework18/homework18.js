@@ -5,7 +5,7 @@ document.getElementById("cookieForm").addEventListener("submit", function(e) {
       let age = document.getElementById("ageInput").value;
 
       let expireDate = new Date();
-      expireDate.setHours(expireDate.getHours() + 3); // термін дії куки
+      expireDate.setHours(expireDate.getHours() + 3); 
 
       document.cookie = "user=" + encodeURIComponent(user) + "; Expires=" + expireDate.toUTCString();
       document.cookie = "age=" + encodeURIComponent(age) + "; Expires=" + expireDate.toUTCString();
@@ -13,7 +13,7 @@ document.getElementById("cookieForm").addEventListener("submit", function(e) {
       alert("Куки збережено!");
     });
 
-    // Зчитування куки (без виводу на сторінку!)
+    
     let cookies = document.cookie.split("; ");
     let user = "";
     let age = "";
