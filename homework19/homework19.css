@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-color1 {
+    background-color: gray;
+    padding-top: 50px;     
+    padding-bottom: 100px; 
+}    
+    
+
+
+.h1 {
+    text-align: center;
+    margin-top: 0;
+}    
+    
+
+.form-row {
+  display: flex;
+  justify-content: center; 
+  gap: 30px;               
+  margin-top: 40px;
+}
+
+.inputName {
+  width: 200px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 5px;
+}  
+  
+
+
+.button {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.inputNumber {
+  width: 200px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.inputId {
+  width: 200px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
