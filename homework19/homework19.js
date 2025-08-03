@@ -5,7 +5,14 @@ $(document).ready(function () {
     const addButton = $('.button');
     const contactContainer = $('.contact-list'); 
 
-    
+    function showPopupMessage(text) {
+        const popup = $('.pop-up_messages');
+        popup.text(text).fadeIn(200);
+        setTimeout(() => {
+            popup.fadeOut(200);
+        }, 5000);
+    }
+
     function getContacts() {
         const contacts = localStorage.getItem('contacts');
         return contacts ? JSON.parse(contacts) : [];
@@ -57,7 +64,7 @@ $(document).ready(function () {
         const id = idInput.val().trim();
 
         if (!name || !number || !id) {
-            alert('Помилка! заповни усі поля');
+            showPopupMessage('Помилка! заповни усі поля');
             return;
         }
 
@@ -65,9 +72,17 @@ $(document).ready(function () {
 
         const isDuplicateId = contacts.some(contact => contact.id === id);
         if (isDuplicateId) {
-            alert('Помилка! такий ID вже існує');
+            showPopupMessage('Помилка! такий ID вже існує');
             return;
         }
+
+        const isDuplicateNumber = contacts.some(contact => contact.number === number);
+        if (isDuplicateNumber) {
+            showPopupMessage('Помилка! такий номер телефона вже існує');
+            return
+        }
+
+        
 
         const newContact = { name, number, id };
         contacts.push(newContact);
@@ -75,11 +90,18 @@ $(document).ready(function () {
         renderContacts();
 
         
+        showPopupMessage('Контакт успішно додано');
+
+       
+     
+
+        
         nameInput.val('');
         numberInput.val('');
         idInput.val('');
     });
 
+    
     
     renderContacts();
 });
