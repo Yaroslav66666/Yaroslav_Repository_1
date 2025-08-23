@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  max-height: 200px;
+
+  img {
+    margin-top: 5.56vh;
+    margin-left: 16.67vh;
+  }
+
+  .container-a {
+    display: flex;
+    gap: 40px;
+    margin-top: 6.51vh;
+    max-height: 19px;
+
+    a {
+      text-decoration: none;
+      color: #4F5665;
+      font-family: sans-serif, Rubik;
+      font-size: 19px;
+      font-weight: bold;
+      transition: 1s;
+    }
+
+    a:hover {
+      color: #F53855;
+    }
+  }
+
+  .container-sign {
+    display: flex;
+    gap: 50px;
+    margin-left: 17vh;
+        
+    .sign-1 {
+      text-decoration: none;
+      color: #0B132A;
+      font-family: sans-serif, Rubik;
+      font-size: 20px;
+      font-weight: bold;
+      transition: 1s;
+      max-height: 24px;
+      margin-top: 6.51vh;
+    }
+
+    .sign-1:hover {
+      color: #F53855;
+    }
+
+    .sign-2 {
+      text-decoration: none;
+      color: #F53855;
+      font-family: sans-serif, Rubik;
+      font-size: 20px;
+      font-weight: bold;
+      border: 1px solid #F53855;
+      max-height: 45px;
+      margin-top: 5.07vh;
+      border-radius: 50px;
+      width: 23vh;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 1s;
+    }
+
+    .sign-2:hover {
+      color: white;
+      background-color: #F53855;
+    }
+  }
+}
+
+main {
+  h1 {
+    font-family: sans-serif, Rubik;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 100px;
+    margin-left: 16.67vh;
+  }
+
+  .p1 {
+    color: #4F5665;
+    font-family: sans-serif, Rubik;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 16.67vh;
+    margin-top: 4vh;
+    line-height: 1.5;
+  }
+
+  .get-started {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif, Rubik;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #F53838;
+    background-color: #F53838;
+    border-radius: 10px;
+    margin-left: 16.67vh;
+    margin-top: 5vh;
+    width: 27.78vh;
+    height: 9.48vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+  }
+
+  .get-started:hover {
+    opacity: 0.8;
+    box-shadow: 5px 5px 5px #F5383859;
+  }
+
+  .img-illustration {
+    margin-left: 100vh;
+    transform: translateY(-58vh);
+    height: 58vh;
+  }
+
+  .container-information {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-20vh);
+    background-color: #FFFFFF;
+    max-width: 1200px;
+    height: 25vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 5px #e0e0e0;
+
+    img {
+      width: 11vh;
+    }
+
+    p {
+      line-height: 2;
+      font-family: sans-serif, Rubik;
+      font-size: 20px;
+    }
+
+    .line {
+      width: 2px;
+      height: 20vh;
+      background-color: #EEEFF2;
+    }
+  }
+
+  .img-illustration-2 {
+    margin-left: 20.5vh;
+    margin-top: 10vh;
+    width: 80vh;
+  }
+
+  h2 {
+    font-family: sans-serif, Rubik;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-left: 110vh;
+    transform: translateY(-65vh);
+  }
+
+  .p2 {
+    color: #4F5665;
+    font-family: sans-serif, Rubik;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-left: 110vh;
+    transform: translateY(-60vh);
+  }
+
+  .container-check-mark {
+      margin-left: 110vh;
+      transform: translateY(-55vh);
+      
+
+     .check-mark {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 35px;
+
+      img {
+        max-width: 24px;
+      }
+
+      p {
+        color: #4F5665;
+        font-family: sans-serif, Rubik;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  h3 {
+    text-align: center;
+    transform: translateY(-20vh);
+    font-family: sans-serif, Rubik;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .p3 {
+    text-align: center;
+    transform: translateY(-13vh);
+    font-family: sans-serif, Rubik;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4F5665;
+  }
+
+  .container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    gap: 50px;
+
+    .card {
+      border-radius: 10px;
+      border: 2px solid #DDDDDD;
+      min-width: 330px;
+      min-height: 740px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    
+
+   
+
+      .img-card1 {
+        display: block;
+        margin: 20px auto 0;
+      }
+
+      h4 {
+        font-family: sans-serif, Rubik;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .check-mark2 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 6px 0;
+        margin-left: 8vh;
+
+        p {
+          font-family: sans-serif, Rubik;
+          font-size: 16px;
+          font-weight: bold;
+          color: #4F5665;
+        }
+      }
+
+      .p4 {
+        text-align: center;
+        font-family: sans-serif, Rubik;
+        font-size: 30px;
+        font-weight: bold;
+        margin: 20px 0 12px;
+
+        small {
+          color: #4F5665;
+        }
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border: 2px solid #F53838;
+        color: #F53838;
+        font-family: sans-serif, Rubik;
+        font-size: 16px;
+        font-weight: bold;
+        width: 200px;
+        height: 55px;
+        border-radius: 50px;
+        margin: 0 auto 20px;
+      }
+    }
+  }
+   
+
+  h5 {
+    text-align: center;
+    font-family: sans-serif, Rubik;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 25vh;
+  }
+
+  .p5 {
+    text-align: center;
+    font-family: sans-serif, Rubik;
+    font-weight: bold;
+    font-size: 16px;
+    color: #4F5665;
+    margin-top: 6vh;
+  }
+
+  .huge-global {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10vh;
+  }
+
+  .sponsored {
+    display: block;
+    margin: 0 auto;
+    margin-top: 6vh;
+  }
+
+  h6 {
+    text-align: center;
+    font-family: sans-serif, Rubik;
+    font-weight:  bold;
+    font-size: 40px;
+    margin-top: 17vh;
+  }
+
+  .p6 {
+    text-align: center;
+    color: #4F5665;
+    font-family: sans-serif, Rubik;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 6vh;
+  }
+}
