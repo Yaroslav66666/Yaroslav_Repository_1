@@ -283,7 +283,7 @@ main .sponsored {
   margin: 0 auto;
   margin-top: 6vh;
 }
-main h6 {
+main .h6-1 {
   text-align: center;
   font-family: sans-serif, Rubik;
   font-weight: bold;
@@ -297,4 +297,211 @@ main .p6 {
   font-weight: bold;
   font-size: 16px;
   margin-top: 6vh;
+}
+main .container-reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6vh;
+  gap: 30px;
+}
+main .container-reviews .reviews {
+  border-radius: 10px;
+  border: 2px solid #DDDDDD;
+  height: 230px;
+  width: 400px;
+}
+main .container-reviews .reviews .persons {
+  display: flex;
+  margin-top: 3vh;
+  margin-left: 7vh;
+  gap: 20px;
+}
+main .container-reviews .reviews .persons .p7 {
+  font-family: sans-serif, Rubik;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 0.5vh;
+  line-height: 3vh;
+}
+main .container-reviews .reviews .persons .p7 small {
+  color: #4F5665;
+}
+main .container-reviews .reviews .rating {
+  display: flex;
+  gap: 7px;
+  margin-left: 43vh;
+  margin-top: -4vh;
+}
+main .container-reviews .reviews .rating .p8 {
+  font-size: 17px;
+  font-family: sans-serif, Rubik;
+}
+main .container-reviews .reviews .p9 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  line-height: 3vh;
+  font-family: sans-serif, Rubik;
+  font-size: 16px;
+}
+main .container-slides {
+  display: flex;
+  gap: 30px;
+  margin-left: 150vh;
+  margin-top: 10vh;
+}
+main .container-slides .slide .button-prev {
+  width: 10vh;
+  height: 10vh;
+  border: 2px solid #F53838;
+  border-radius: 50px;
+  background-color: white;
+}
+main .container-slides .slide .button-next {
+  width: 10vh;
+  height: 10vh;
+  border: 2px solid #F53838;
+  border-radius: 50px;
+  background-color: #F53838;
+}
+main .container-ellipses {
+  display: flex;
+  gap: 15px;
+  margin-top: -6.5vh;
+  margin-left: 15vh;
+}
+main .subscribe {
+  box-shadow: 3px 3px 5px 5px #e0e0e0;
+  border-radius: 10px;
+  max-width: 1200px;
+  height: 35vh;
+  margin: 0 auto;
+  margin-top: 20vh;
+}
+main .subscribe .h6-2 {
+  font-family: sans-serif, Rubik;
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 9vh;
+  padding-top: 5vh;
+}
+main .subscribe .p10 {
+  color: #4F5665;
+  font-family: sans-serif, Rubik;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 9vh;
+  padding-top: 5vh;
+}
+main .subscribe .subscride-now {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: sans-serif, Rubik;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  background-color: #F53838;
+  border-radius: 10px;
+  width: 32vh;
+  height: 10vh;
+  margin-left: 120vh;
+  margin-top: 0;
+  position: relative;
+  top: -90px;
+  transition: 1s;
+}
+main .subscribe .subscride-now:hover {
+  opacity: 0.8;
+  box-shadow: 5px 5px 5px rgba(245, 56, 56, 0.3490196078);
+}
+
+footer .logo-2 {
+  margin-left: 23vh;
+  margin-top: 20vh;
+}
+footer .p11 {
+  margin-left: 23vh;
+  font-family: sans-serif, Rubik;
+  font-weight: bold;
+  font-size: 16px;
+  color: #4F5665;
+  margin-top: -69vh;
+  line-height: 1.5;
+}
+footer .container-social-icons {
+  display: flex;
+  gap: -20px;
+  margin-left: 21vh;
+  margin-top: 8vh;
+}
+footer .copyright {
+  font-family: sans-serif, Rubik;
+  font-weight: bold;
+  font-size: 20px;
+  color: #4F5665;
+  margin-left: 23vh;
+  margin-top: -37vh;
+}
+footer .container-h6 {
+  display: flex;
+  gap: 150px;
+  margin-left: 100vh;
+  margin-top: -40vh;
+}
+footer .container-h6 .h6-3 {
+  font-family: sans-serif, Rubik;
+  font-weight: bold;
+  font-size: 19px;
+}
+footer .container-a {
+  display: flex;
+  gap: 80px;
+  margin-left: 100vh;
+  margin-top: 3vh;
+}
+footer .container-a .a1 {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #4F5665;
+  font-family: sans-serif, Rubik;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 3;
+  transition: 1.5s;
+}
+footer .container-a .a1:hover {
+  color: #F53855;
+}
+footer .container-a .a2 {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #4F5665;
+  font-family: sans-serif, Rubik;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 3;
+  transition: 1.5s;
+  margin-left: 5vh;
+}
+footer .container-a .a2:hover {
+  color: #F53855;
+}
+footer .container-a .a3 {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #4F5665;
+  font-family: sans-serif, Rubik;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 3;
+  transition: 1.5s;
+}
+footer .container-a .a3:hover {
+  color: #F53855;
 }/*# sourceMappingURL=homework22.css.map */
