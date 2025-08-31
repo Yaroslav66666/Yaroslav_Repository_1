@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lasles VPN</title>
   <link rel="stylesheet" href="./homework22.css">
+  <link rel="stylesheet" href="./homeworkmedia22.css">
 </head>
 <body>
    <header>
        <div>
-           <img src="./img/Logo.svg" alt="Lasles VPN Logo">
+           <img class="logo-1" src="./img/Logo.svg" alt="Lasles VPN Logo">
        </div>
 
        <div class="container-a">
@@ -24,6 +25,8 @@
            <a class="sign-1" href="#" target="_blank" rel="noopener noreferrer">Sign In</a>
            <a class="sign-2" href="#" target="_blank" rel="noopener noreferrer">Sign Up</a>
        </div>
+
+       
    </header>
 
    <main>
@@ -44,16 +47,27 @@
        </div>
 
        <div class="container-information">
-             <img src="./img/user.svg" alt="Icon-Users">
+
+         <div class="information">
+             <img class="img-information" src="./img/user.svg" alt="Icon-Users">
              <p><strong>90+</strong> <br> Users</p>
-             <div class="line"></div>
-            
-             <img src="./img/location.svg" alt="Icon-Locations">
+         </div>
+
+         <div class="line"></div>
+         
+         <div class="information">
+             <img class="img-information" src="./img/location.svg" alt="Icon-Locations">
              <p><strong>30+</strong> <br> Locations</p>
-             <div class="line"></div>
-            
-             <img src="./img/Server.svg" alt="Icon-Servers">
+             
+         </div> 
+
+         <div class="line"></div>
+         
+         <div class="information">
+             <img class="img-information" src="./img/Server.svg" alt="Icon-Servers">
              <p><strong>50+</strong> <br> Servers</p>
+         </div>
+
         </div>
 
         <div>
@@ -133,7 +147,7 @@
                  </div>
 
                  <div>
-                     <a href="#" target="_blank" rel="noopener noreferrer">Select</a>
+                     <button class="select-button">Select</button>
                  </div>
              </div>
 
@@ -176,7 +190,7 @@
                  </div>
 
                  <div>
-                     <a href="#" target="_blank" rel="noopener noreferrer">Select</a>
+                     <button class="select-button">Select</button>
                  </div>
              </div>
 
@@ -224,7 +238,7 @@
                  </div>
 
                  <div>
-                     <a href="#" target="_blank" rel="noopener noreferrer">Select</a>
+                     <button class="select-button">Select</button>
                  </div>
              </div>
         </div>
@@ -241,8 +255,26 @@
              <img class="huge-global" src="./img/Huge Global.svg" alt="Huge-Global">
         </div>
 
-        <div>
-             <img class="sponsored" src="./img/Sponsored.svg" alt="sponsored">
+        <div class="container-sponsers">
+             <div>
+                 <img class="sponsored" src="./img/Mask Group (1).svg" alt="sponsored">
+             </div>
+
+             <div>
+                 <img class="sponsored" src="./img/Mask Group.svg" alt="sponsored">
+             </div>
+
+             <div>
+                 <img class="sponsored" src="./img/Mask Group (2).svg" alt="sponsored">
+             </div>
+
+             <div>
+                 <img class="sponsored" src="./img/Mask Group (3).svg" alt="sponsored">
+             </div>
+
+             <div>
+                 <img class="sponsored" src="./img/Mask Group (4).svg" alt="sponsored">
+             </div>
         </div>
 
         <div>
@@ -305,19 +337,19 @@
 
         <div class="container-slides">
              <div class="slide">
-                 <button class="button-prev">
+                 <button class="button-prev" id="arrow-left">
                      <img src="./img/eva_arrow-back-fill.svg" alt="Arrow-prev">
                  </button>
              </div>
 
              <div class="slide">
-                 <button class="button-next">
+                 <button class="button-next" id="arrow-right">
                      <img src="./img/eva_arrow-back-fill2.svg" alt="Arrow-next">
                  </button>
              </div>
         </div>
 
-        <div class="container-ellipses">
+        <div class="container-ellipses" id="points">
              <img src="./img/Union (1).svg" alt="Ellipse">
              <img src="./img/Ellipse 172.svg" alt="Ellipse">
              <img src="./img/Ellipse 172.svg" alt="Ellipse">
@@ -361,7 +393,7 @@
              <h6 class="h6-3">Earn Money</h6>
          </div>
 
-         <div class="container-a">
+         <div class="container-a2">
              <div>
                  <a class="a1" href="#" target="_blank" rel="noopener noreferrer">Download</a>
                  <a class="a1" href="#" target="_blank" rel="noopener noreferrer">Pricing</a>
@@ -387,6 +419,6 @@
          </div>
    </footer>
 
-   <script src="./homework23.js"></script>
+   <script src="./homework22.js"></script>
 </body>
 </html>
